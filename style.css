@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: "Courgette", cursive;
+}
+
+.myNav {
+  height: 65px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.left,
+.right,
+.center {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+@media(max-width:955px){
+  a{
+    font-size: 12px;
+  }
+}
+a:hover {
+  color: black;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.parent {
+  margin: 45px 0px;
+  overflow: hidden;
+}
+
+.border {
+  border-color: rgba(16, 16, 16, 0.2) !important;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  border-radius: 4rem;
+  padding: 1.5rem 3rem;
+  padding-bottom: 2.5rem;
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.circle {
+  margin: 1rem auto;
+  height: 7rem;
+  width: 7rem;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  border-radius: 50%;
+}
+
+.text {
+  text-align: center;
+}
+.fetaure {
+  margin-top: 600px;
+  margin-bottom: 75px;
+}
+
+.fetaure h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.price_flex{
+  margin: 0px auto;
+}
+.card_details {
+  position: relative;
+}
+
+.cards {
+  position: relative;
+  background-image: url(./ASSETS/Background.jpg);
+  width: 92%;
+  margin: 0px auto;
+  border-radius: 4rem;
+  height: 250px;
+}
+
+.cards h1 {
+  text-align: center;
+  color: white;
+  padding: 1.5rem 0px;
+}
+
+.info {
+  background-color: white;
+  border-radius: 4rem;
+  padding: 5rem 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-color: rgba(16, 16, 16, 0.2) !important;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.swiper {
+  width: 80%;
+  height: 500px;
+}
+.parent_img {
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(16,16,16,0.6);
+  border-radius: 8px;
+  background-color: white;
+}
+.swiper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -35px !important;
+}
+.swiper-pagination-bullet {
+  background-color: black !important;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  width: 50px;
+  border-radius: 0.5rem;
+}
+.second_head {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+.btn-block {
+  background: black;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 15px;
+  /* padding: 8px 25px; */
+  width: 90%;
+  margin: 0px auto;
+  padding: 0.85rem;
+}
+.btn:hover {
+  color: white;
+}
+.card_info {
+  margin: 30px 0px;
+  font-size: 15px;
+}
+.info_container {
+  width: 90%;
+  margin: 0px auto;
+}
+span {
+  font-size: 18px;
+  text-decoration: line-through;
+}
+.small {
+  display: none;
+  padding: 0.6rem 0px;
+}
+
+.bars {
+  height: 50%;
+  width: 60px;
+  position: absolute;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.bars .bar {
+  height: 3px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  margin: 5px auto;
+  background-color: rgba(16, 16, 16, 0.8);
+}
+@media (max-width: 993px) {
+  .fetaure {
+    margin-top: 600px;
+  }
+  .left{
+    padding: 0.8rem!important;
+  }
+}
+
+@media (max-width: 768px) {
+  .price_flex{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .price1{
+    width: 58%;
+  }
+  .discount{
+    width: 42%;
+  }
+  
+  .fetaure {
+    margin-top: 1100px;
+  }
+  .swiper {
+    height: 500px;
+  }
+  .second_holder {
+    order: 2;
+  }
+  .second_head {
+    order: 2;
+    margin-top: 1rem;
+  }
+  .info_holder {
+    margin-top: 5rem;
+  }
+  .big {
+    display: none;
+  }
+  .small {
+    display: flex;
+  }
+  .card_info{
+    margin: 0px;
+  }
+  .feature_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .circle:first-child{
+    margin-bottom: 1rem;
+  }
+  .circle:nth-child(2){
+    margin-bottom: 1rem;
+  }
+  .text{
+    padding-left: 1rem;
+  }
+  .text p{
+    font-size: 17px;
+  }
+  .border{
+    padding: 1.5rem;
+  }
+  .circle{
+    margin: 1rem 0rem;
+  }
+  .info{
+    padding: 5rem 4rem;
+  }
+  .second_head::before{
+    content: "";
+    background-color: rgba(16,16,16,0.5);
+    width: 45%;
+    height: 1.5px;
+    color: black;
+    position: absolute;
+    left: 28%;
+    top: 75%;
+  }
+  .fetaure h1{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .info {
+    padding: 5rem 2rem;
+  }
+  .circle{
+    height: 6rem;
+    width: 6rem;
+  }
+  .text p {
+    font-size: 15px;
+  }
+  .text {
+    padding-left: 0.5rem;
+  }
+  .second_head::before{
+    top: 74%;
+  }
+}
